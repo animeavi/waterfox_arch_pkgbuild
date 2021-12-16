@@ -10,7 +10,7 @@ export CXXFLAGS=""
 export CFLAGS=""
 
 # a bit of extra hardening and optimization, edit to your tastes
-export LDFLAGS="-Wl,-O3,--no-omagic,--sort-common,--as-needed,--relax,-z,norelro,-z,combreloc,-z,global,-z,noexecstack,-z,now"
+export LDFLAGS="-Wl,-O3,--no-omagic,--sort-common,--as-needed,--relax,-z,norelro,-z,combreloc,-z,global,-z,noexecstack,-z,now,-lwayland-client"
 ac_add_options --enable-optimize
 
 ac_add_options --target=x86_64-pc-linux-gnu
